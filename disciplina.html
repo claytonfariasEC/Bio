@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Página do Professor Clayton</title>
+
+    <meta name="description"
+        content="Página simples utilizada nas aulas de Linguagens para Internet I para demonstrar conceitos básicos de HTML">
+
+</head>
+
+<body>
+
+    <!-- ===================== -->
+    <!-- Cabeçalho da página -->
+    <!-- ===================== -->
+
+    <header>
+
+        <h1 id="inicio">Página de exemplo de HTML</h1>
+
+        <p>
+            Esta página foi criada para demonstrar alguns conceitos básicos de
+            <strong>HTML</strong> na disciplina
+            <strong>Linguagens para Internet I</strong>.
+        </p>
+
+        <p>
+            Professor: <strong>Clayton Farias</strong>
+        </p>
+
+    </header>
+
+    <!-- ===================== -->
+    <!-- Conteúdo principal -->
+    <!-- ===================== -->
+
+    <main>
+
+        <!-- Seção sobre HTML -->
+
+        <section>
+
+            <h2>O que é HTML?</h2>
+
+            <p>
+                O <strong>HTML (HyperText Markup Language)</strong> é a linguagem
+                utilizada para estruturar páginas da web.
+                Ele não é uma linguagem de programação, mas sim uma
+                <em>linguagem de marcação</em>.
+            </p>
+
+            <p>
+                Utilizamos <strong>tags</strong> para organizar o conteúdo da página,
+                como títulos, parágrafos, imagens e links.
+            </p>
+
+        </section>
+
+        <!-- Seção de formatação de texto -->
+
+        <section>
+
+            <h2>Exemplo de formatação de texto</h2>
+
+            <p>
+                No HTML podemos destacar textos utilizando algumas tags:
+            </p>
+
+            <p>
+                <strong>Texto em negrito (strong)</strong><br>
+                <em>Texto em destaque ou itálico (em)</em>
+            </p>
+
+            <p>
+                Essas tags ajudam a dar significado ao conteúdo da página.
+            </p>
+
+        </section>
+
+        <!-- Quebra de linha -->
+
+        <section>
+
+            <h2>Quebra de linha</h2>
+
+            <p>
+                Para pular linhas dentro de um parágrafo usamos a tag
+                <strong>&lt;br&gt;</strong>.
+            </p>
+
+            <p>
+                Exemplo:
+                <br>
+                Linha 1 <br>
+                Linha 2 <br>
+                Linha 3
+            </p>
+
+        </section>
+
+        <!-- Links -->
+
+        <section>
+
+            <h2>Links na Web</h2>
+
+            <p>
+                Um dos elementos mais importantes da web são os
+                <strong>links</strong>.
+                Eles permitem navegar entre páginas diferentes.
+            </p>
+
+            <p>
+                Exemplo de link que faz uma busca no Google:
+            </p>
+
+            <p>
+                <a href="https://www.google.com/search?q=Minecraft" target="_blank">
+                    Buscar "Minecraft" no Google
+                        </a> <p>
+                <a href="https://www.google.com/search?q=Colocar_Pesquisa_Aqui" target="_blank">
+                    Buscar "Jogo Preferido" no Google
+                
+                  </a>
+                </p>
+            </p>
+
+
+        </section>
+
+        <!-- Página sobre -->
+
+        <section>
+
+            <h2>Link para outra página do site</h2>
+
+            <p>
+                Também podemos criar links para outras páginas dentro do mesmo site.
+            </p>
+
+            <p>
+                Neste exemplo temos uma segunda página chamada
+                <strong>sobre.html</strong>.
+            </p>
+
+            <p>
+                <a href="sobre.html">
+                    Clique aqui para saber mais sobre o professor
+                </a>
+            </p>
+
+        </section>
+
+        <!-- Links relativos -->
+
+        <section>
+
+            <h2>Links relativos</h2>
+
+            <p>
+                Links relativos são usados para navegar entre arquivos dentro do
+                próprio projeto.
+            </p>
+
+            <p>
+                Exemplos:
+            </p>
+
+            <p>
+
+                Página inicial na mesma pasta:
+                <a href="index.html">Index</a>
+
+                <br><br>
+
+                Arquivo dentro de uma pasta:
+                <a href="dicas/dica1.html">Dica 1</a>
+
+                <br><br>
+
+                Voltar uma pasta:
+                <a href="../index.html">Voltar</a>
+
+            </p>
+
+        </section>
+
+        <!-- Âncoras -->
+
+        <section>
+
+            <h2>Links internos (âncoras)</h2>
+
+            <p>
+                Podemos criar links que levam para uma parte específica da mesma
+                página.
+            </p>
+
+            <p id="exemplo">
+                Este é um parágrafo que possui um
+                <strong>id="exemplo"</strong>.
+            </p>
+
+            <p>
+                <a href="#inicio">
+                    Ir para o parágrafo de Inicio (Topo da Página)
+                </a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+
+    <footer>
+
+        <p>
+            Disciplina de Linguagens para Internet I
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
