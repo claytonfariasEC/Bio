@@ -1,0 +1,492 @@
+<!DOCTYPE html><html lang="en" class="scroll-smooth"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafael Oleques Nunes | NLP Researcher</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet" href="css/academicons.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            brand: {
+              blue: '#1a73e8',
+              dark: '#202124',
+              gray: '#5f6368',
+              light: '#f8f9fa',
+              surface: '#ffffff'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(229, 231, 235, 0.6);
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    section {
+      scroll-margin-top: 5rem;
+    }
+
+    .timeline-line {
+      position: absolute;
+      left: 15px;
+      top: 10px;
+      bottom: 0;
+      width: 2px;
+      background-color: #e5e7eb;
+      z-index: 0;
+    }
+  </style>
+</head>
+
+<body class="bg-brand-light text-brand-dark antialiased selection:bg-blue-100 selection:text-blue-900">
+
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="w-8 h-8 bg-brand-dark rounded-lg flex items-center justify-center text-white font-serif font-bold text-lg shadow-lg group-hover:bg-brand-blue transition-colors">
+            R
+          </div>
+          <div class="flex flex-col">
+            <span class="font-bold text-base text-brand-dark leading-none">Rafael Oleques Nunes</span>
+          </div>
+        </a>
+
+        <div class="hidden md:flex items-center space-x-1">
+          <a href="#about" class="px-3 py-1.5 text-sm font-medium text-brand-gray hover:text-brand-blue rounded-full hover:bg-white transition-colors">About</a>
+          <a href="#publications" class="px-3 py-1.5 text-sm font-medium text-brand-gray hover:text-brand-blue rounded-full hover:bg-white transition-colors">Research</a>
+          <a href="#trajectory" class="px-3 py-1.5 text-sm font-medium text-brand-gray hover:text-brand-blue rounded-full hover:bg-white transition-colors">Trajectory</a>
+          <a href="#activities" class="px-3 py-1.5 text-sm font-medium text-brand-gray hover:text-brand-blue rounded-full hover:bg-white transition-colors">Activities</a>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <a href="https://www.linkedin.com/in/rafael-oleques" target="_blank" class="p-2 text-brand-gray hover:text-brand-blue hover:bg-blue-50 rounded-full transition-colors"><i class="fab fa-linkedin text-lg"></i></a>
+          <a href="https://scholar.google.com/citations?user=9X-Tqj4AAAAJ&hl=pt-BR" target="_blank" class="p-2 text-brand-gray hover:text-brand-blue hover:bg-blue-50 rounded-full transition-colors"><i class="ai ai-google-scholar text-lg"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="about" class="pt-28 pb-12 bg-white border-b border-slate-200 relative overflow-hidden">
+    <div class="absolute inset-0 z-0 pointer-events-none">
+      <img src="images/image_5846de.png" class="w-full h-full object-cover opacity-10" alt="Background Pattern">
+      <div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/60"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="flex flex-col lg:flex-row gap-10 items-center lg:items-start">
+        <div class="relative shrink-0">
+          <div class="w-56 h-56 rounded-full overflow-hidden border-8 border-brand-light shadow-xl">
+            <img src="images/profile.jpg" alt="Rafael Oleques Nunes" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+          </div>
+        </div>
+
+        <div class="flex-1 text-center lg:text-left space-y-4">
+          <div>
+            <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-blue-50 border border-blue-100 text-brand-blue text-xs font-bold uppercase tracking-wide mb-3">
+              <span class="material-symbols-rounded text-sm">psychology</span> NLP Researcher
+            </div>
+            <h1 class="text-4xl lg:text-5xl font-serif font-bold text-brand-dark leading-tight">
+              Bridging AI & <span class="text-brand-blue">Specialized Domains</span>
+            </h1>
+          </div>
+
+          <div class="prose prose-lg text-brand-gray max-w-3xl mx-auto lg:mx-0 leading-relaxed text-base">
+            <p>I specialize in <strong>Natural Language Processing</strong>, building robust models for high-stakes
+              domains like <strong>Law</strong>, <strong>Geology</strong>, and <strong>Healthcare</strong>. My research
+              focuses on Information Extraction, Data Quality, and LLM adaptation for the Portuguese language.</p>
+            <p class="text-sm mt-2 text-slate-500">Currently pursuing a PhD in Computer Science at UFRGS.</p>
+          </div>
+
+          <div class="flex flex-wrap gap-3 justify-center lg:justify-start pt-2">
+            <a href="http://lattes.cnpq.br/4389626354460779" target="_blank" class="inline-flex items-center px-5 py-2 bg-brand-dark text-white rounded-full text-sm font-medium hover:bg-slate-800 transition-all shadow-md"><i class="ai ai-lattes text-lg mr-2"></i> Lattes CV</a>
+            <a href="https://scholar.google.com/citations?user=9X-Tqj4AAAAJ&hl=pt-BR" target="_blank" class="inline-flex items-center px-5 py-2 bg-white border border-slate-200 text-brand-dark rounded-full text-sm font-medium hover:border-brand-blue hover:text-brand-blue transition-all shadow-sm"><i class="ai ai-google-scholar text-lg mr-2"></i> Scholar</a>
+            <a href="https://huggingface.co/ronunes" target="_blank" class="inline-flex items-center px-5 py-2 bg-white border border-slate-200 text-brand-dark rounded-full text-sm font-medium hover:border-brand-blue hover:text-brand-blue transition-all shadow-sm"><i class="ai ai-hugging-face text-lg mr-2"></i> Models</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+    <!-- PUBLICATIONS CAROUSEL -->
+    <section id="publications">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-6">
+        <div>
+          <h2 class="text-2xl font-bold text-brand-dark flex items-center gap-2 font-serif">
+            <span class="material-symbols-rounded text-brand-blue text-3xl">library_books</span> Publications
+          </h2>
+          <p class="text-brand-gray mt-1 text-sm">Swipe to explore my research contributions.</p>
+        </div>
+        <div class="flex gap-2 mt-4 md:mt-0 overflow-x-auto pb-1" id="pub-tabs">
+          <button onclick="filterPubs('all', this)" class="tab-btn active px-4 py-1.5 rounded-full text-xs font-bold bg-brand-dark text-white shadow-md transition-all whitespace-nowrap">All</button>
+          <button onclick="filterPubs('Resource', this)" class="tab-btn px-4 py-1.5 rounded-full text-xs font-bold bg-white text-brand-gray border border-slate-200 hover:bg-slate-50 transition-all whitespace-nowrap flex items-center gap-1"><span class="material-symbols-rounded text-xs">database</span> Resources</button>
+          <button onclick="filterPubs('Legal', this)" class="tab-btn px-4 py-1.5 rounded-full text-xs font-bold bg-white text-brand-gray border border-slate-200 hover:bg-slate-50 transition-all whitespace-nowrap">Legal
+            AI</button>
+          <button onclick="filterPubs('Geology', this)" class="tab-btn px-4 py-1.5 rounded-full text-xs font-bold bg-white text-brand-gray border border-slate-200 hover:bg-slate-50 transition-all whitespace-nowrap">Geology</button>
+          <button onclick="filterPubs('Humanities', this)" class="tab-btn px-4 py-1.5 rounded-full text-xs font-bold bg-white text-brand-gray border border-slate-200 hover:bg-slate-50 transition-all whitespace-nowrap">Digital
+            Humanities</button>
+        </div>
+      </div>
+
+      <div class="relative group/carousel">
+        <button onclick="scrollCarousel(-1)" class="hidden md:flex absolute -left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-white rounded-full shadow-xl items-center justify-center text-brand-dark hover:text-brand-blue hover:scale-110 transition-all border border-slate-100 opacity-0 group-hover/carousel:opacity-100"><span class="material-symbols-rounded text-3xl">chevron_left</span></button>
+        <button onclick="scrollCarousel(1)" class="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-white rounded-full shadow-xl items-center justify-center text-brand-dark hover:text-brand-blue hover:scale-110 transition-all border border-slate-100 opacity-0 group-hover/carousel:opacity-100"><span class="material-symbols-rounded text-3xl">chevron_right</span></button>
+        <div id="pub-slider" class="flex gap-5 overflow-x-auto no-scrollbar scroll-smooth snap-x snap-mandatory py-4 px-1">
+          <!-- Content injected via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+            SECTION 2: TRAJECTORY (Education + Awards)
+            Two distinct columns for credentials
+        -->
+    <section id="trajectory">
+      <div class="grid md:grid-cols-12 gap-12">
+
+        <!-- EDUCATION (Left) -->
+        <div class="md:col-span-5">
+          <h2 class="text-xl font-bold text-brand-dark flex items-center gap-2 mb-6 font-serif">
+            <span class="material-symbols-rounded text-brand-blue text-2xl">school</span> Education
+          </h2>
+          <div class="relative border-l-2 border-slate-200 ml-2 space-y-10 py-2">
+            <!-- PhD -->
+            <div class="relative pl-8 group timeline-node">
+              <span class="text-xs font-bold text-brand-blue bg-blue-50 px-2 py-1 rounded mb-1 inline-block">2025 -
+                Present</span>
+              <h3 class="font-bold text-slate-900 text-lg">PhD in Computer Science</h3>
+              <p class="text-sm text-slate-600">UFRGS</p>
+              <p class="text-xs text-slate-500 mt-0.5">Advisor: Prof. Joel Luís Carbonera</p>
+            </div>
+            <!-- MSc -->
+            <div class="relative pl-8 group timeline-node">
+              <span class="text-xs font-bold text-slate-500 bg-slate-200 px-2 py-1 rounded mb-1 inline-block">2023 -
+                2025</span>
+              <h3 class="font-bold text-slate-900 text-lg">MSc in Computer Science</h3>
+              <p class="text-sm text-slate-600">UFRGS</p>
+              <span class="text-[10px] font-bold text-yellow-700 bg-yellow-100 px-2 py-0.5 rounded inline-block mt-1">🏆
+                M.Sc. Thesis Distinction</span>
+              <p class="text-xs text-slate-500 mt-1 italic">"Data contamination in specialized NER corpora"</p>
+            </div>
+            <!-- BSc -->
+            <div class="relative pl-8 group timeline-node">
+              <span class="text-xs font-bold text-slate-500 bg-slate-200 px-2 py-1 rounded mb-1 inline-block">2018 -
+                2023</span>
+              <h3 class="font-bold text-slate-900 text-lg">BSc in Computer Science</h3>
+              <p class="text-sm text-slate-600">UFRGS</p>
+            </div>
+            <!-- Technical HS (New) -->
+            <div class="relative pl-8 group timeline-node">
+              <span class="text-xs font-bold text-slate-500 bg-slate-200 px-2 py-1 rounded mb-1 inline-block">2013 -
+                2016</span>
+              <h3 class="font-bold text-slate-900 text-lg">Technical High School in IT</h3>
+              <p class="text-sm text-slate-600">IFSUL Campus Charqueadas</p>
+              <span class="text-[10px] font-bold text-yellow-700 bg-yellow-100 px-2 py-0.5 rounded inline-block mt-1">🏆
+                Academic Laureate</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AWARDS (Right) -->
+        <div class="md:col-span-7" id="awards">
+          <h2 class="text-xl font-bold text-brand-dark flex items-center gap-2 mb-6 font-serif">
+            <span class="material-symbols-rounded text-brand-blue text-2xl">emoji_events</span> Honors & Awards
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Main Award 1 -->
+            <div class="bg-gradient-to-br from-yellow-50 to-white p-5 rounded-xl border border-yellow-200 shadow-sm relative overflow-hidden">
+              <div class="absolute top-0 right-0 p-2 opacity-10"><span class="material-symbols-rounded text-6xl">verified</span></div>
+              <span class="text-xs font-bold text-yellow-800 bg-yellow-200/60 px-2 py-0.5 rounded">2025</span>
+              <h3 class="font-bold text-brand-dark mt-2 leading-tight">Highlight Award (Destaque)</h3>
+              <p class="text-xs text-slate-600 mt-1">I Salão da Pós-Graduação - UFRGS</p>
+            </div>
+            <!-- Main Award 2 -->
+            <div class="bg-gradient-to-br from-yellow-50 to-white p-5 rounded-xl border border-yellow-200 shadow-sm relative overflow-hidden">
+              <div class="absolute top-0 right-0 p-2 opacity-5"><span class="material-symbols-rounded text-6xl text-yellow-600">workspace_premium</span></div>
+              <span class="text-xs font-bold text-yellow-800 bg-yellow-200/60 px-2 py-0.5 rounded">2025</span>
+              <h3 class="font-bold text-brand-dark mt-2 leading-tight">M.Sc. Thesis Distinction</h3>
+              <p class="text-xs text-slate-600 mt-1">Awarded by Examination Committee</p>
+            </div>
+            <!-- Older Awards (Grouped) -->
+            <div class="sm:col-span-2 bg-slate-100/50 p-5 rounded-xl border border-slate-200">
+              <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wide mb-3">Previous Honors</h4>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-sm">
+                <div class="flex justify-between border-b border-slate-200 pb-1">
+                  <span class="text-slate-700">Academic Laureate (IFSUL)</span>
+                  <span class="font-mono text-slate-400 text-xs">2016</span>
+                </div>
+                <div class="flex justify-between border-b border-slate-200 pb-1">
+                  <span class="text-slate-700">2nd Place, Programming Marathon</span>
+                  <span class="font-mono text-slate-400 text-xs">2016</span>
+                </div>
+                <div class="flex justify-between border-b border-slate-200 pb-1">
+                  <span class="text-slate-700">1st Place, Exact Sciences Fair</span>
+                  <span class="font-mono text-slate-400 text-xs">2015</span>
+                </div>
+                <div class="flex justify-between border-b border-slate-200 pb-1">
+                  <span class="text-slate-700">2nd Place, Humanities Fair</span>
+                  <span class="font-mono text-slate-400 text-xs">2015</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+            SECTION 3: ACADEMIC ACTIVITIES (Projects & Leadership Split)
+            Left: Technical Work (Projects)
+            Right: Community Work (Service + Mentorship)
+        -->
+    <section id="activities">
+      <div class="grid lg:grid-cols-2 gap-12">
+
+        <!-- LEFT: RESEARCH PROJECTS -->
+        <div class="space-y-6" id="projects">
+          <h2 class="text-xl font-bold text-brand-dark flex items-center gap-2 mb-2 font-serif">
+            <span class="material-symbols-rounded text-brand-blue text-2xl">science</span> Research Projects
+          </h2>
+
+          <!-- Current Project (Highlighted) -->
+          <div class="bg-white p-6 rounded-xl border border-amber-200 shadow-sm hover:shadow-md transition-all">
+            <div class="flex justify-between mb-2">
+              <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wide">PhD
+                Project</span>
+              <span class="text-xs font-mono font-bold text-slate-400">2021 - Present</span>
+            </div>
+            <h3 class="font-bold text-xl text-brand-dark mb-2">GEORESERVOIR</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">Reservoir Geometry & Architecture Parameterization.</p>
+            <div class="flex gap-2">
+              <span class="px-2 py-1 bg-slate-50 rounded text-[10px] font-bold text-slate-500 uppercase">Advisor: Prof.
+                Joel Luís Carbonera</span>
+            </div>
+          </div>
+
+          <!-- Previous Projects (Smaller) -->
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:border-brand-blue transition-colors">
+              <div class="flex justify-between mb-2">
+                <span class="material-symbols-rounded text-blue-600 text-xl">medical_services</span>
+                <span class="text-[10px] font-mono font-bold text-slate-400">2018-19</span>
+              </div>
+              <h4 class="font-bold text-sm text-brand-dark mb-1">Clinical NLP</h4>
+              <p class="text-xs text-slate-500 line-clamp-2">Automatic classification of medical information from
+                clinical notes.</p>
+              <div class="flex gap-2">
+                <span class="px-2 py-1 bg-slate-50 rounded text-[10px] font-bold text-slate-500 uppercase">Advisor:
+                  Prof. Renata Vieira</span>
+              </div>
+            </div>
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:border-brand-blue transition-colors">
+              <div class="flex justify-between mb-2">
+                <span class="material-symbols-rounded text-purple-600 text-xl">image</span>
+                <span class="text-[10px] font-mono font-bold text-slate-400">2016</span>
+              </div>
+              <h4 class="font-bold text-sm text-brand-dark mb-1">ImgDenoising & Advicor</h4>
+              <p class="text-xs text-slate-500 line-clamp-2">Tools for image noise removal and assistive technology.</p>
+              <div class="flex gap-2">
+                <span class="px-2 py-1 bg-slate-50 rounded text-[10px] font-bold text-slate-500 uppercase">Advisor:
+                  Prof. Rodolfo Favaretto</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: LEADERSHIP & COMMUNITY -->
+        <div class="space-y-6" id="mentorship">
+          <h2 class="text-xl font-bold text-brand-dark flex items-center gap-2 mb-2 font-serif">
+            <span class="material-symbols-rounded text-brand-blue text-2xl">diversity_3</span> Community & Leadership
+          </h2>
+
+          <!-- Highlighted Service -->
+          <div class="bg-brand-dark text-white rounded-xl p-6 shadow-lg relative overflow-hidden group">
+            <div class="absolute right-0 top-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+              <span class="material-symbols-rounded text-8xl">event_seat</span>
+            </div>
+            <div class="relative z-10">
+              <span class="text-[10px] font-bold text-blue-300 uppercase tracking-wider">Organization Service</span>
+              <h3 class="text-lg font-bold mt-1"><a href="https://sites.google.com/view/x-tilic-2025/o-evento" target="_blank" class="hover:underline">X TILIC 2025</a></h3>
+              <p class="text-slate-300 text-xs mt-1 mb-4">X Workshop de Iniciação Científica em Tecnologia da Informação
+                e da Linguagem Humana</p>
+              <div class="flex items-center gap-4 text-xs text-slate-400 border-t border-white/10 pt-3">
+                <span class="flex items-center gap-1"><span class="material-symbols-rounded text-sm">calendar_month</span> Oct 2025</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-rounded text-sm">badge</span>
+                  Co-Chair</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mentorship List -->
+          <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+            <div class="bg-slate-50 px-5 py-3 border-b border-slate-200 flex justify-between items-center">
+              <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wide">Co-Supervisions (Advisor: Prof.
+                Dennis G. Balreira)</span>
+            </div>
+            <div class="divide-y divide-slate-100">
+              <div class="p-3 hover:bg-slate-50 transition-colors group">
+                <div class="flex justify-between items-start mb-1">
+                  <p class="font-bold text-sm text-slate-800">Joao Pedro Kuhn Braun</p>
+                  <span class="text-[10px] font-bold bg-blue-50 text-brand-blue px-2 py-0.5 rounded">2025</span>
+                </div>
+                <p class="text-[11px] text-slate-500 italic">"Análise de Modelos de Linguagem para Extração de Entidades
+                  Nomeadas em Documentos Médicos em Português"</p>
+              </div>
+              <div class="p-3 hover:bg-slate-50 transition-colors group">
+                <div class="flex justify-between items-start mb-1">
+                  <p class="font-bold text-sm text-slate-800">Vitoria Colonetti Benedet</p>
+                  <span class="text-[10px] font-bold bg-blue-50 text-brand-blue px-2 py-0.5 rounded">2025</span>
+                </div>
+                <p class="text-[11px] text-slate-500 italic">"Desafios na Associação de Imagens e Legendas em Português:
+                  Avaliação do modelo CLIP no Conjunto de Dados FM30k"</p>
+              </div>
+              <div class="p-3 hover:bg-slate-50 transition-colors group">
+                <div class="flex justify-between items-start mb-1">
+                  <p class="font-bold text-sm text-slate-800">Eduardo Braga Rhoden</p>
+                  <span class="text-[10px] font-bold bg-slate-100 text-slate-500 px-2 py-0.5 rounded">2024</span>
+                </div>
+                <p class="text-[11px] text-slate-500 italic">"Exploring active sampling strategies for self-training in
+                  named entity recognition"</p>
+              </div>
+              <div class="p-3 hover:bg-slate-50 transition-colors group">
+                <div class="flex justify-between items-start mb-1">
+                  <p class="font-bold text-sm text-slate-800">Matheus Stein Aguiar</p>
+                  <span class="text-[10px] font-bold bg-slate-100 text-slate-500 px-2 py-0.5 rounded">2024</span>
+                </div>
+                <p class="text-[11px] text-slate-500 italic">"Comparative analysis of the performance of large language
+                  models in the classification of legal texts"</p>
+              </div>
+              <div class="p-3 hover:bg-slate-50 transition-colors group">
+                <div class="flex justify-between items-start mb-1">
+                  <p class="font-bold text-sm text-slate-800">Giovani Bombardieri</p>
+                  <span class="text-[10px] font-bold bg-slate-100 text-slate-500 px-2 py-0.5 rounded">2024</span>
+                </div>
+                <p class="text-[11px] text-slate-500 italic">"Automatic Generation of a Named Entity Set for Analysis of
+                  Political Speeches"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-brand-dark text-slate-300 py-16 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h3 class="text-2xl font-serif font-bold text-white mb-4">Rafael Oleques Nunes</h3>
+      <p class="mb-2 text-slate-400">Institute of Informatics, UFRGS</p>
+      <p class="mb-8 text-sm font-mono text-brand-blue">ronunes [at] inf.ufrgs.br</p>
+
+      <div class="flex justify-center gap-8 mb-12 flex-wrap">
+        <a href="https://github.com/RafaelOleques" target="_blank" class="hover:text-white transition-colors" title="GitHub">
+          <i class="fab fa-github text-2xl"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/rafael-oleques" target="_blank" class="hover:text-white transition-colors" title="LinkedIn">
+          <i class="fab fa-linkedin text-2xl"></i>
+        </a>
+        <a href="https://www.researchgate.net/profile/Rafael-Nunes-35" target="_blank" class="hover:text-white transition-colors" title="ResearchGate">
+          <i class="ai ai-researchgate text-2xl"></i>
+        </a>
+        <a href="https://huggingface.co/ronunes" target="_blank" class="hover:text-white transition-colors" title="Hugging Face">
+          <i class="ai ai-hugging-face text-2xl"></i>
+        </a>
+        <a href="https://scholar.google.com/citations?user=9X-Tqj4AAAAJ&hl=pt-BR" target="_blank" class="hover:text-white transition-colors" title="Google Scholar">
+          <i class="ai ai-google-scholar text-2xl"></i>
+        </a>
+        <a href="https://www.semanticscholar.org/author/Rafael-Oleques-Nunes/2312161338" target="_blank" class="hover:text-white transition-colors" title="Semantic Scholar">
+          <i class="ai ai-semantic-scholar text-2xl"></i>
+        </a>
+      </div>
+      <div class="border-t border-slate-800 pt-8 text-sm text-slate-600">
+        © 2025 Rafael Oleques Nunes.
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Logic for Dynamic Content -->
+  <script>
+    const publications = [
+      { title: "Natural Language Processing in Geology: A Review of Portuguese Language Resources and Techniques", authors: "Rafael Oleques Nunes, A. S. Spritzer, C. M. D. S. Freitas, D. G. Balreira", venue: "Procesamiento del Lenguaje Natural, Vol. 74", year: 2025, domains: ["Geology"], type: "Journal", image: "./imagens/2025_pln_geology.png", links: [{ n: "PDF", u: "http://journal.sepln.org/sepln/ojs/ojs/index.php/pln/article/view/6666", i: "fas fa-file-pdf" }], resources: ["Survey"] },
+      { title: "Reconhecimento de Entidades Nomeadas e Vazamento de Dados em Textos Legislativos", authors: "Rafael Oleques Nunes, A. S. Spritzer, C. M. D. S. Freitas, D. G. Balreira", venue: "Linguamática, 16(2)", year: 2024, domains: ["Legal"], type: "Journal", image: "./imagens/2024_linguamatica_legal.png", links: [{ n: "PDF", u: "https://www.linguamatica.com/index.php/linguamatica/article/view/450", i: "fas fa-file-pdf" }, { n: "Corpus", u: "https://github.com/Convenio-Camara-dos-Deputados/ulyssesner-br-propor/tree/main/PL-corpus_v2", i: "fas fa-database" }, { n: "Code", u: "https://github.com/RafaelOleques/NERLinguamatica2024", i: "fab fa-github" }], resources: ["Corpus", "Code"] },
+      { title: "An Evaluation of Large Language Models for Geological Named Entity Recognition", authors: "Rafael Oleques Nunes, A. Spritzer, D. G. Balreira, C. M. Freitas, J. L. Carbonera", venue: "IEEE ICTAI 2024", year: 2024, domains: ["Geology"], type: "Conference", image: "./imagens/2024_ictai_geology.png", links: [{ n: "Paper", u: "https://ieeexplore.ieee.org/document/10849508", i: "fas fa-file-alt" }, { n: "Corpus", u: "https://huggingface.co/datasets/ronunes/GeoCorpus-3v2", i: "fas fa-database" }, { n: "Code", u: "https://github.com/RafaelOleques/geoner_ictai2024", i: "fab fa-github" }], resources: ["Corpus", "Code"] },
+      { title: "An Ensemble of LLMs finetuned with LoRA for NER in Portuguese legal documents", authors: "Rafael Oleques Nunes, A. Spritzer, C. M. Freitas, D. G. Balreira, A. R. Tavares", venue: "BRACIS 2024", year: 2024, domains: ["Legal"], type: "Conference", image: "./imagens/2024_bracis_ensemble.png", links: [{ n: "PDF", u: "https://link.springer.com/chapter/10.1007/978-3-031-79029-4_9", i: "fas fa-file-pdf" }], resources: ["Technique"] },
+      { title: "Assessing European and Brazilian Portuguese LLMs for NER in specialised domains", authors: "Rafael Oleques Nunes, A. Spritzer, D. G. Balreira, C. M. Freitas, F. Olival, H. F. Cameron, R. Vieira", venue: "BRACIS 2024", year: 2024, domains: ["Legal", "Humanities"], type: "Conference", image: "./imagens/2024_bracis_assessing.jpg", links: [{ n: "PDF", u: "https://link.springer.com/chapter/10.1007/978-3-031-79029-4_15", i: "fas fa-file-pdf" }], resources: [] },
+      { title: "Ancient Greek's New Technological Muse: Extracting Topoi in the Anacreontea with LLMs", authors: "Rafael Oleques Nunes, J. G. Zandoná, J. V. Maia, A. Spritzer, D. G. Balreira, C. M. Freitas", venue: "SEMISH 2024", year: 2024, domains: ["Humanities"], type: "Conference", image: "./imagens/2024_semish_greek.png", links: [{ n: "PDF", u: "https://sol.sbc.org.br/index.php/semish/article/view/29353/29158", i: "fas fa-file-pdf" }, { n: "Corpus", u: "https://huggingface.co/datasets/ronunes/anacreontea", i: "fas fa-database" }, { n: "Code", u: "https://github.com/RafaelOleques/anacreontea", i: "fab fa-github" }], resources: ["Corpus", "Code"] },
+      { title: "Out of Sesame Street: A Study of Portuguese Legal NER Through In-Context Learning", authors: "Rafael Oleques Nunes, A. S. Spritzer, C. M. D. S. Freitas, D. G. Balreira", venue: "ICEIS 2024", year: 2024, domains: ["Legal"], type: "Conference", image: "./imagens/2024_iceis_sesame.png", links: [{ n: "Paper", u: "https://www.scitepress.org/Papers/2024/126247/126247.pdf", i: "fas fa-file-alt" }, { n: "Code", u: "https://github.com/RafaelOleques/ICEIS_2024_-_ICL_Legislative_NER", i: "fab fa-github" }], resources: ["Code", "Technique"] },
+      { title: "A Named Entity Recognition Approach for Portuguese Legislative Texts Using Self-Learning", authors: "Rafael Oleques Nunes, D. G. Balreira, A. S. Spritzer, C. M. D. S. Freitas", venue: "PROPOR 2024", year: 2024, domains: ["Legal"], type: "Conference", image: "./imagens/2024_propor_selflearning.jpg", links: [{ n: "PDF", u: "https://aclanthology.org/2024.propor-1.30/", i: "fas fa-file-pdf" }, { n: "Model", u: "https://huggingface.co/ronunes/bertimbau-base-ulyssesner_br-bcod-self_learning", i: "fas fa-brain" }], resources: ["Model", "Technique"] },
+      { title: "Jornalismo de Dados: transformação digital na produção de notícias", authors: "H. Bilo, Rafael Oleques Nunes, D. M. de Castro, D. A. C. Barone", venue: "WICS 2023", year: 2023, domains: ["Other"], type: "Workshop", image: "./imagens/2023_wics_jornalismo.png", links: [{ n: "PDF", u: "https://sol.sbc.org.br/index.php/wics/article/view/24832", i: "fas fa-file-pdf" }], resources: [] },
+      { title: "MeSHx-notes: web-system for clinical notes", authors: "Rafael Oleques Nunes, J. E. Soares, H. D. dos Santos, R. Vieira", venue: "AIH 2019", year: 2019, domains: ["Health"], type: "Workshop", image: "./imagens/2019_aih_meshx.png", links: [{ n: "Link", u: "https://link.springer.com/chapter/10.1007/978-3-030-12738-1_1", i: "fas fa-link" }, { n: "Code", u: "https://github.com/nlp-pucrs/meshx-notes", i: "fab fa-github" }], resources: ["Code"] }
+    ];
+
+    function filterPubs(filter, btn) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.className = "tab-btn px-4 py-1.5 rounded-full text-xs font-bold bg-white text-brand-gray border border-slate-200 hover:bg-slate-50 transition-all whitespace-nowrap flex items-center gap-1");
+      btn.className = "tab-btn active px-4 py-1.5 rounded-full text-xs font-bold bg-brand-dark text-white shadow-md transition-all whitespace-nowrap flex items-center gap-1";
+      const slider = document.getElementById('pub-slider');
+      slider.innerHTML = '';
+      const filtered = filter === 'all' ? publications : filter === 'Resource' ? publications.filter(p => p.resources.length > 0) : publications.filter(p => p.domains.includes(filter));
+
+      filtered.forEach(pub => {
+        const linksHtml = pub.links.map(l => `<a href="${l.u}" target="_blank" class="inline-flex items-center gap-1 px-2.5 py-1 bg-white border border-slate-200 rounded text-[10px] font-bold text-brand-gray hover:text-brand-blue hover:border-brand-blue transition-colors"><i class="${l.i}"></i> ${l.n}</a>`).join('');
+        const tagsHtml = pub.resources.map(r => `<span class="px-2 py-0.5 text-[9px] font-bold uppercase rounded bg-slate-100 text-slate-600 border border-slate-200">${r}</span>`).join('');
+        const card = document.createElement('div');
+        card.className = "min-w-[300px] md:min-w-[360px] bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 snap-start flex flex-col h-full group";
+        card.innerHTML = `
+                    <div class="h-40 overflow-hidden rounded-t-2xl relative bg-slate-50">
+                        <img src="${pub.image}" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur px-2 py-1 rounded text-[10px] font-bold text-slate-800 shadow-sm">${pub.year}</div>
+                        <div class="absolute bottom-3 left-3 flex gap-1">${tagsHtml}</div>
+                    </div>
+                    <div class="p-5 flex flex-col flex-1">
+                        <div class="mb-2"><span class="text-[9px] font-bold uppercase tracking-wider text-brand-blue">${pub.venue.split(',')[0]}</span></div>
+                        <h3 class="text-sm font-bold text-brand-dark leading-snug mb-3 group-hover:text-brand-blue transition-colors line-clamp-2" title="${pub.title}"><a href="${pub.links[0].u}" target="_blank">${pub.title}</a></h3>
+                        <p class="text-[10px] text-slate-500 mb-5 line-clamp-2">${pub.authors}</p>
+                        <div class="mt-auto pt-3 border-t border-slate-50 flex flex-wrap gap-2">${linksHtml}</div>
+                    </div>`;
+        slider.appendChild(card);
+      });
+    }
+
+    function scrollCarousel(direction) { document.getElementById('pub-slider').scrollBy({ left: direction * 340, behavior: 'smooth' }); }
+    document.addEventListener('DOMContentLoaded', () => { filterPubs('all', document.querySelector('#pub-tabs button')); });
+  </script>
+
+
+</body></html>
